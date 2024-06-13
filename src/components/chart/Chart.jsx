@@ -1,6 +1,5 @@
 import React, { useContext, useState } from "react";
 import { AreaChart, Tooltip, Area, ResponsiveContainer } from "recharts";
-import "../../scss/chart.scss";
 import DropDownContext from "../../context/dropDownContext";
 import { VscCircleFilled } from "react-icons/vsc";
 import { teniaryHandler } from "../../App";

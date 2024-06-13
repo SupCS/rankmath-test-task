@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import NavContext from "../../context/navContext";
-import "../../scss/header.scss";
 import { IoIosArrowBack } from "react-icons/io";
 import { PiShareDuotone } from "react-icons/pi";
 import { CiSquareInfo, CiCircleRemove } from "react-icons/ci";

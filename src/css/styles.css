@@ -1,0 +1,383 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  justify-content: center;
+  max-height: 100vh;
+  font-family: "DM Sans", sans-serif;
+  list-style: 1;
+  font-weight: 400;
+  overflow-y: scroll;
+}
+
+.container {
+  min-width: 32rem;
+  max-width: 42.8rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f3f6fd;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.09);
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.btc {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btc-icon-con {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-chart {
+  margin: 0 auto;
+}
+
+.nav-bar {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  padding: 2rem 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-name {
+  justify-self: center;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #4d5272;
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-three-dots {
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.2rem);
+  z-index: 2;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards ease-in-out;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  border-radius: 1rem;
+  max-width: 18.94rem;
+  min-width: 10rem;
+  background-color: #e5e5e5;
+  padding: 1.6rem 1.6rem;
+  z-index: 9999;
+  transform-origin: top right;
+  opacity: 0;
+}
+
+.scale-in-center {
+  animation: scaleInCenter 0.5s forwards ease-in-out;
+}
+
+.mobile-list {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #4d5272;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.hc-border-bottom {
+  border-bottom: 0.13rem solid #aeb8c4;
+  padding: 1.2rem;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  cursor: pointer;
+}
+
+.lists {
+  grid-column: 1/2;
+}
+
+.hc-border-bottom:last-child {
+  border: none;
+  color: #ee225d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes scaleInCenter {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.duration-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+  padding: 0 0.3rem;
+  font-size: 1.2rem;
+  color: #aeb8c4;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+}
+
+.margin-top {
+  margin-top: 1.2rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  color: none;
+  padding: 0.6rem 1.6rem;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.active {
+  background-color: #aeb8c4;
+  color: #fff;
+}
+
+.chart-container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 4.5rem rgba(0, 0, 0, 0.09);
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.min-max {
+  text-align: center;
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1.2rem;
+  gap: 4rem;
+}
+
+.min-max-grid {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #96a4be;
+}
+
+.card-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-shadow: 0 0 4.5rem rgba(0, 0, 0, 0.09);
+  border-radius: 1rem;
+  padding: 2rem 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.9rem;
+  background-color: #fff;
+  transition: margin-bottom 0.4s ease-in-out;
+  transition: margin-top 0.4s ease-in-out;
+}
+
+.btc {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.coin-bitcoin {
+  font-weight: 500;
+  font-size: 1.284rem;
+  color: #4d5272;
+}
+
+.coin-name {
+  justify-self: end;
+  grid-column: 3;
+  font-weight: 500;
+  color: #96a4be;
+  font-size: 1.284rem;
+}
+
+.coin-amount {
+  font-size: 3rem;
+  grid-row: 2;
+  grid-column: 1/-1;
+  font-weight: 600;
+  color: #4d5272;
+  padding-top: 1rem;
+}
+
+.coin-in-usd {
+  grid-row: 3;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #96a4be;
+  grid-column: 1/3;
+}
+
+.value-rate {
+  grid-row: 3;
+  grid-column: 3;
+  width: min-content;
+  border-radius: 2rem;
+  justify-self: end;
+  border: none;
+  padding: 0.47rem 1rem;
+  background-color: #ee225d;
+  font-size: 1.284rem;
+  color: #ffffff;
+}
+
+.arrow-down {
+  grid-row: 4;
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  padding: 1rem 0;
+  color: "#96a4be";
+  display: block;
+}
+
+.button-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.09);
+  margin-top: -1.5rem;
+  z-index: 1;
+  font-size: 1.2rem;
+  list-style: none;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  border-radius: 1rem;
+}
+
+.buy-sell-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+.buy-sell-button.buy {
+  background-color: #22ee33;
+}
+
+.buy-sell-button.sell {
+  background-color: #ee225d;
+}
+
+.slide-down {
+  max-height: 10rem;
+  opacity: 1;
+}
+
+.slide-up {
+  max-height: 0;
+  opacity: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  box-shadow: 0 0 4.5rem rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+}
+
+.btc-container {
+  width: 85%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.buy-sel-btc {
+  box-shadow: 0 0 4.5rem rgba(0, 0, 0, 0.09);
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  gap: 0.7rem;
+}
+
+.buy-sell-details {
+  font-size: 1.284rem;
+  font-weight: 600;
+  color: #4d5272;
+}
+
+/*# sourceMappingURL=styles.css.map */

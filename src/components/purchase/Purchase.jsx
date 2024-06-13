@@ -1,5 +1,4 @@
 import React from "react";
-import "../../scss/purchase.scss";
 import { BiSolidDollarCircle } from "react-icons/bi";
 
 const Purchase = () => {

@@ -1,5 +1,4 @@
 import React from "react";
-import "../../scss/menu.scss";
 import { BiSolidWallet, BiSolidCompass } from "react-icons/bi";
 import { IoIosNotifications, IoMdSettings } from "react-icons/io";
 

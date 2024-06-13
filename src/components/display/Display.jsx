@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import "../../scss/display.scss";
 import DropDownContext from "../../context/dropDownContext";
 import { SiBitcoinsv } from "react-icons/si";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
@@ -7,6 +6,7 @@ import { teniaryHandler } from "../../App";
 
 const Display = ({ coinName, coinAmount, coin, coinInUsd, valueRate }) => {
     const { isOpen, setIsOpen } = useContext(DropDownContext);
+
     const dropDown = () => {
         setIsOpen(!isOpen);
     };
